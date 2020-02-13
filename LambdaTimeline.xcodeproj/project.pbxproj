@@ -40,6 +40,10 @@
 		E3767AE223F4B2BD009E4E08 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3767AE123F4B2BD009E4E08 /* RecordingViewController.swift */; };
 		E3767AE823F4BAAC009E4E08 /* CamreaPerviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3767AE723F4BAAC009E4E08 /* CamreaPerviewView.swift */; };
 		E3767AF423F5E94E009E4E08 /* VideoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3767AF323F5E94E009E4E08 /* VideoContainerView.swift */; };
+		E3767AF623F5FBE5009E4E08 /* Posts+MKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3767AF523F5FBE5009E4E08 /* Posts+MKAnnotation.swift */; };
+		E3767AF823F5FECD009E4E08 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3767AF723F5FECD009E4E08 /* LocationManager.swift */; };
+		E3767AFA23F60E47009E4E08 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3767AF923F60E47009E4E08 /* MapViewController.swift */; };
+		E3767AFC23F60EC4009E4E08 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3767AFB23F60EC4009E4E08 /* MapKit.framework */; };
 		E453457955DF907FCBD117F1 /* Pods_LambdaTimeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA39CACB677861CF84322FB5 /* Pods_LambdaTimeline.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +86,10 @@
 		E3767AE123F4B2BD009E4E08 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		E3767AE723F4BAAC009E4E08 /* CamreaPerviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamreaPerviewView.swift; sourceTree = "<group>"; };
 		E3767AF323F5E94E009E4E08 /* VideoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainerView.swift; sourceTree = "<group>"; };
+		E3767AF523F5FBE5009E4E08 /* Posts+MKAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Posts+MKAnnotation.swift"; sourceTree = "<group>"; };
+		E3767AF723F5FECD009E4E08 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E3767AF923F60E47009E4E08 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E3767AFB23F60EC4009E4E08 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3767AFC23F60EC4009E4E08 /* MapKit.framework in Frameworks */,
 				E453457955DF907FCBD117F1 /* Pods_LambdaTimeline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +195,7 @@
 				E3767AD423F3543A009E4E08 /* AudioCommentViewController.swift */,
 				E3767ADB23F4A510009E4E08 /* VideoPostsCollectionViewController.swift */,
 				E3767AE123F4B2BD009E4E08 /* RecordingViewController.swift */,
+				E3767AF923F60E47009E4E08 /* MapViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -219,6 +229,7 @@
 				46CFE6FC217154F500E7FF73 /* Networking.swift */,
 				46CFE6F82170862C00E7FF73 /* ShiftableViewController.swift */,
 				E3767AD623F35D45009E4E08 /* AudioManager.swift */,
+				E3767AF723F5FECD009E4E08 /* LocationManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -230,6 +241,7 @@
 				46D571F42173CF3E00E7FF73 /* UIImage+Ratio.swift */,
 				E3767AD223F21887009E4E08 /* UIImage+Scaling.swift */,
 				46CFE6F621707FA600E7FF73 /* UIViewController+InformationalAlert.swift */,
+				E3767AF523F5FBE5009E4E08 /* Posts+MKAnnotation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,6 +249,7 @@
 		7C2A25429FC0F968FC1D35E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3767AFB23F60EC4009E4E08 /* MapKit.framework */,
 				AA39CACB677861CF84322FB5 /* Pods_LambdaTimeline.framework */,
 			);
 			name = Frameworks;
@@ -401,6 +414,7 @@
 				E3767ADA23F384D4009E4E08 /* ComentCell.swift in Sources */,
 				E3767AD323F21887009E4E08 /* UIImage+Scaling.swift in Sources */,
 				46CFE6FB21714E6100E7FF73 /* Author.swift in Sources */,
+				E3767AF823F5FECD009E4E08 /* LocationManager.swift in Sources */,
 				46CFE6F92170862C00E7FF73 /* ShiftableViewController.swift in Sources */,
 				4646377C216FDE4B00E7FF73 /* AppDelegate.swift in Sources */,
 				E3767AE823F4BAAC009E4E08 /* CamreaPerviewView.swift in Sources */,
@@ -408,6 +422,7 @@
 				46CFE6F521707D0000E7FF73 /* ImagePostViewController.swift in Sources */,
 				E3767AE223F4B2BD009E4E08 /* RecordingViewController.swift in Sources */,
 				46CFE6FF2171556D00E7FF73 /* ConcurrentOperation.swift in Sources */,
+				E3767AFA23F60E47009E4E08 /* MapViewController.swift in Sources */,
 				46463790216FFD1B00E7FF73 /* Post.swift in Sources */,
 				46CFE6F32170757F00E7FF73 /* User+DictionaryRepresentation.swift in Sources */,
 				46D571F32172D43B00E7FF73 /* Cache.swift in Sources */,
@@ -416,6 +431,7 @@
 				46CFE7032171572600E7FF73 /* ImagePostCollectionViewCell.swift in Sources */,
 				4646379C2170091A00E7FF73 /* PostController.swift in Sources */,
 				464637992170048900E7FF73 /* FirebaseConvertible.swift in Sources */,
+				E3767AF623F5FBE5009E4E08 /* Posts+MKAnnotation.swift in Sources */,
 				46A0366A21700F5100E7FF73 /* PostsCollectionViewController.swift in Sources */,
 				46D571F52173CF3E00E7FF73 /* UIImage+Ratio.swift in Sources */,
 				E3767AD523F3543A009E4E08 /* AudioCommentViewController.swift in Sources */,

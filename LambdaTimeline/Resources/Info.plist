@@ -33,6 +33,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) needs access to your camera in order to record video</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) need access to your location to show location data </string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>$(PRODUCT_NAME) need access to your microphone to record audio comments and video for post</string>
 	<key>NSPhotoLibraryUsageDescription</key>
